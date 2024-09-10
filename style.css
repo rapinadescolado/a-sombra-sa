@@ -138,3 +138,9 @@ footer {
     border-top: var(--primary) 1vh solid;
     background-color: var(--background-dark);
 }
+footer p { 
+    width: 100%;
+    margin-top: 5vh;
+    color: var(--text2);
+    text-align: center;
+}
