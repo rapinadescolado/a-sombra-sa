@@ -104,6 +104,7 @@ header{
     z-index: 9;
 }
 header #headerlogo {
+    height: 8vh;
     margin: 0 5vw;
 }
 header #headerlogo img {
@@ -135,7 +136,7 @@ footer p {
     margin-top: 5vh;
     color: var(--text2);
     text-align: center;
-    font-size: 3vh;
+    font-size: 2.5vh;
     letter-spacing: 0.5vh;
     font-weight: 300;
 }

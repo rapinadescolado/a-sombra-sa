@@ -2,16 +2,16 @@
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     margin: 15vh 18vw 10vh 18vw;
 }
 main section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 5vw 0;
-    border-bottom: var(--primary-dark1) 1vh solid;
-    border-radius: 40px 40px 0 0;
+    margin: 15vh 0;
+    border-bottom: var(--primary-dark1) 0.8vh solid;
+    border-radius: 3vw 3vw 0 0;
     padding: 4vw;
     background-color: var(--background-light);
 }
@@ -25,9 +25,9 @@ main section h2 {
     margin-bottom: 5vh;
     color: var(--text2);
     text-align: center;
-    letter-spacing: 4px;
-    font-size: 38px;
-    font-weight: 800;
+    letter-spacing: 8px;
+    font-size: 34px;
+    font-weight: 600;
 }
 main section p {
     width: 100%;
@@ -40,4 +40,12 @@ main section p {
 main section strong {
     color: var(--secondary-light);
     font-weight: 400;
+}
+
+main .mainSeparator {
+    width: 90%;
+    height: 3px;
+    margin: 25vh 0;
+    border-radius: 3px;
+    background-color: var(--primary-dark2);
 }
