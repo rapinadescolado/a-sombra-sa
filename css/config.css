@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* - - - - - COLORS - - - - - */
+:root{
+    --primary: #e4c366;
+    --primary-dark1: #99895a;
+    --primary-dark2: #4d4632;
+    --background: #121110;
+    --background-light: #242321;
+    --background-dark: #0d0c0c;
+    --secondary: #40110e;
+    --secondary-light: #af2e25;
+    --secondary-dark: #290e0c;
+    --text: #050504;
+    --text2: #fff;
+}
+
+
+
+/* - - - - - PRE-CONFIG - - - - - */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+*::-webkit-scrollbar {
+    width: 0.7vw;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--primary-dark2);
+}
+*::-webkit-scrollbar-track {
+    background: var(--background-dark);
+}
+
+#enterPageAnimation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #050504;
+    animation: enterpageanimation 1.5s ease forwards;
+    z-index: 10;
+}
+#enterPageAnimation img {
+    width: 150px;
+    animation: enterpageimage 1.5s ease forwards;
+}
+@keyframes enterpageanimation {
+    70% {
+        left: 0;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+@keyframes enterpageimage {
+    0%{
+        transform: translateX(-100vw);
+    }
+    50% {
+        scale: 1;
+        transform: translateX(0);
+    }
+    70% {
+        transform: translateX(-10vw) rotate(-15deg);
+        scale: 2;
+    }
+    100% {
+        transform: translateX(0) rotate(180deg);
+    }
+}
